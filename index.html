@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://kit.fontawesome.com/1ce6f653f8.js" crossorigin="anonymous"></script>
+    <title>Project-1</title>
+</head>
+<body>
+    <header class="header_wrapper">
+        <div class="header_inner container">
+
+          <div class="logo-menu-section">
+
+           <div class="logo">
+            <a href="index.html" target=”_blank” ><img src="/assets/images/styleade_logo-removebg-preview.png" alt=""></a> 
+           </div>       
+            <div class="menu sidebar">
+              <div class="menu-btn">
+                <i class="fa-solid fa-xmark" onclick="hideSidebar()"></i>
+              </div>
+            <a href="#">Solutions<i class="fa-solid fa-arrow-down"></i></a>
+            <a href="#" target=”_blank” >About us</a>
+            <a href="#" target=”_blank” >Contact us</a>
+              
+            </div>
+          </div>
+          <div class="nav-button btn">
+            Schedule a demo
+          </div>
+          <div class="menu-btn">
+            <i class="fa-solid fa-bars" onclick="showSidebar()"></i>
+            
+          </div>
+        </div>
+        
+    </header>
+    <script>
+    function showSidebar(){
+      const sidebar = document.querySelector(".sidebar")
+      sidebar.style.display = "flex"
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector(".sidebar")
+      sidebar.style.display = "none"
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+/* ### Font Upload ### */
+/* Proxima Nova */
+@font-face {
+    font-family: "proximanova";
+    src: url(../fonts/proxima-nova/proxima_nova_font-webfont.woff) format("woff"),
+    url(../fonts/proxima-nova/proxima_nova_font-webfont.woff2) format("woff2");
+}
+/* Proxima Nova */
+/* ### Font Upload ### */
+
+/* ### Rest CSS ### */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ### Rest CSS ### */
+
+/* ###--------------------- Common CSS --------------------### */
+body{
+    font-family: "proximanova";
+}
+/* Layout CSS */
+        .container{
+        max-width: 1080px;
+        margin: 0 auto;
+        }
+   /* Layout CSS */
+
+    /* Button CSS */
+    .btn{
+        text-align: center;
+        font-size: 16px;
+        line-height: 20px;
+        border-radius: 50px;
+        text-decoration: none;
+        padding: 8px 30px;
+        color: #ffffff;
+        background-color: #7832ED;
+        
+    }
+    .btn-light{
+        font-size: 14px;
+        line-height: 20px;
+        border-radius: 50px;
+        text-decoration: none;
+        padding: 8px 30px;
+        color: #7832ED;
+        background-color: #ffffff;
+    }
+    /* Button CSS */
+/* ### Common CSS ### */
+
+/* ### Header CSS ### */
+.header_inner.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.logo-menu-section{
+    display: flex;
+    align-items: center;
+    
+}
+.menu{
+    margin-left: 15px;
+}
+.menu a{
+    display: inline-block;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 0 30px;
+    color: #4D4D4F;
+    font-weight: 700;
+}
+.menu a:hover{
+    display: inline;
+    color: #2e2e30;
+    letter-spacing: 1px;
+    border-top: 1px solid #2e2e30;
+    border-bottom: 1px solid #2e2e30;
+    
+}
+.logo img{
+    width: 100%;
+}
+
+.nav-button{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    cursor: pointer;
+}
+.nav-button:hover{
+    background-color: #4811a9;
+}
+.menu-btn{
+    display: none;
+}
+
+@media screen and (max-width: 650px){
+    .logo img{
+        max-width: 80%;
+    }
+    .header_inner.container{
+        padding: 0 5px;
+    }
+    .menu{
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: start;
+        background-color:#7732ed93;
+        backdrop-filter: blur(5px);
+        width: 50%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 999;
+        
+           
+    }
+    .menu a{
+        
+        padding-top: 30px;
+    }
+    .menu a:hover {
+       
+        letter-spacing: 2px;
+        border: 0 solid #2e2e30;
+    }
+    .menu-btn{        
+        display: block;
+        right: 0;
+        margin: 20px 25px;
+        font-size: 1.5em;
+        
+    }
+    .nav-button{
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 10px;
+    }
+}
+/* @media screen and (max-width: 803px){
+    .logo img{
+        max-width: 70%;
+    }
+    .nav-button.btn {
+        line-height: 13px;
+    }
+} */
+@media screen and (max-width: 431px){
+   .sidebar{
+    width: 100%;
+   } 
+   .nav-button{
+  
+    line-height: 10px;
+}
+}
+
+
+
+/* ### Header CSS ### */
+
+/* ### Homepage CSS ### */
+/* ### Homepage CSS ### */
+
+/* ### About CSS ### */
+/* ### About CSS ### */
+
+/* ### Footer CSS ### */
+/* ### Footer CSS ### */
